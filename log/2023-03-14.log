@@ -1,0 +1,10 @@
+2023-03-14 11:27:40 - Request : {"document":{"name":"C:\\xampp\\tmp\\phpB9F7.tmp","mime":"application\/pdf","postname":"Dokumen1.7.pdf"},"signature":"[{\"email\":\"heru@gsp.co.id\",\"detail\":[{\"p\":1,\"x\":41,\"y\":101,\"w\":24,\"h\":12},{\"p\":1,\"x\":144,\"y\":105,\"w\":24,\"h\":12}]}]"}
+2023-03-14 11:27:41 - Response : {"status":"OK","ref_id":"98aedd65-62df-401b-963f-51d692cd2b06","code":null,"timestamp":"2023-03-14T11:27:41+07:00","message":null,"data":{"id":"98aedd65-96e2-4e47-a262-659068d73727","stamp":[],"sign":[{"teken_id":"HH283D00","email":"heru@gsp.co.id","url":"https:\/\/ttd.sandbox-111094.com\/e1WVao6ap4KQX"}]}}
+2023-03-14 15:04:48 - Request : {"document":{"name":"C:\\xampp\\tmp\\php842B.tmp","mime":"application\/pdf","postname":"Dokumen1.7.pdf"},"signature":"[{\"email\":\"heru@gsp.co.id\",\"detail\":[{\"p\":1,\"x\":31,\"y\":97,\"w\":41,\"h\":20}]}]"}
+2023-03-14 15:04:59 - Response : 
+2023-03-14 15:06:49 - Request : {"document":{"name":"C:\\xampp\\tmp\\php5E99.tmp","mime":"application\/pdf","postname":"Dokumen1.7.pdf"},"signature":"[{\"email\":\"heru@gsp.co.id\",\"detail\":[{\"p\":1,\"x\":31,\"y\":97,\"w\":41,\"h\":20}]}]"}
+2023-03-14 15:06:49 - Response : 
+2023-03-14 15:07:31 - Request : {"document":{"name":"C:\\xampp\\tmp\\phpA.tmp","mime":"application\/pdf","postname":"Dokumen1.7.pdf"},"signature":"[{\"email\":\"heru@gsp.co.id\",\"detail\":[{\"p\":1,\"x\":35,\"y\":98,\"w\":36,\"h\":18}]}]"}
+2023-03-14 15:07:42 - Response : 
+2023-03-14 15:08:26 - Request : {"document":{"name":"C:\\xampp\\tmp\\phpD7FC.tmp","mime":"application\/pdf","postname":"Dokumen1.7.pdf"},"signature":"[{\"email\":\"heru@gsp.co.id\",\"detail\":[{\"p\":1,\"x\":35,\"y\":98,\"w\":36,\"h\":18}]}]"}
+2023-03-14 15:08:27 - Response : {"status":"OK","ref_id":"98af2c58-b852-4e4a-90f0-0f8e24a1df7d","code":null,"timestamp":"2023-03-14T15:08:27+07:00","message":null,"data":{"id":"98af2c58-f51c-4e69-a217-2d0fdfd02486","stamp":[],"sign":[{"teken_id":"HH283D00","email":"heru@gsp.co.id","url":"https:\/\/ttd.sandbox-111094.com\/ygi6Oz9ubCpbs"}]}}

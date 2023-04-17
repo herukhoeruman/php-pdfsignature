@@ -1,0 +1,250 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <meta name="robots" content="noindex">
+    <meta name="robots" content="nofollow">
+    <title>User Register</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/jquery-ui.css">
+    <link href="asset/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="asset/css/style.css" rel="stylesheet">
+  </head>
+  <body class="d-flex flex-column h-100">
+    <header>
+      <!-- SDK Documentation For GET JSON value -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">DTB SDK</a>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                <a href="index.html" class="nav-link">Upload</a>
+                </li>
+                <li class="nav-item">
+                <a href="download.html" class="nav-link">Download</a>
+                </li>
+                <li class="nav-item">
+                <a href="register.html" class="nav-link">Register</a>
+                </li>
+            </ul>
+        </div>
+      </nav>
+
+    </header>
+
+    <!-- Begin page content -->
+    <main role="main" class="main">
+      <div class="container">
+        <div class="push-down">
+          <div class="card">
+            <form id="register">
+              <div class="card-header">
+                Register Form
+              </div>
+              <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-md-4">Email</label>
+                        <div class="col-md-8">
+                          <input class="form-control" name="email">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label class="col-md-4">Name</label>
+                        <div class="col-md-8">
+                          <input class="form-control" name="name">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label class="col-md-4">Jenis Kelamin</label>
+                        <div class="col-md-8">
+                          <select class="form-control" name="gender">
+                            <option>Pilih Jenis Kelamin</option>
+                            <option value="0">Perempuan</option>
+                            <option value="1">Laki - Laki</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label class="col-md-4">Tanggal Lahir</label>
+                        <div class="col-md-8">
+                          <input class="form-control" name="dob" type="date">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label class="col-md-4">Tempat Lahir</label>
+                        <div class="col-md-8">
+                          <input class="form-control" name="pob">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label class="col-md-4">NIK</label>
+                        <div class="col-md-8">
+                          <input class="form-control" name="nik">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label class="col-md-4">No. Handphone</label>
+                        <div class="col-md-8">
+                          <input class="form-control" name="mobile">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-md-4">Provinsi</label>
+                        <div class="col-md-8">
+                          <select class="form-control" name="province" id="province">
+                            <option>-- Pilih Provinsi --</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label class="col-md-4">Kota</label>
+                        <div class="col-md-8">
+                          <select class="form-control" name="district" id="district">
+                            <option>-- Pilih Kota / Kabupaten --</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label class="col-md-4">Kecamatan</label>
+                        <div class="col-md-8">
+                          <select class="form-control selectpicker" name="sub_district" id="sub_district">
+                            <option>-- Pilih Kecamatan --</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label class="col-md-4">Kode POS</label>
+                        <div class="col-md-8">
+                          <input class="form-control" name="zip_code">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label class="col-md-4">Foto KTP</label>
+                        <div class="col-md-8">
+                          <input class="form-control" name="ktp_photo" type="file">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label class="col-md-4">Foto Selfie</label>
+                        <div class="col-md-8">
+                          <input class="form-control" name="selfie_photo" type="file" accept="image/*;capture=camera">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label class="col-md-4">Alamat</label>
+                        <div class="col-md-8">
+                          <textarea class="form-control" name="address"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <button id="btn" class="btn btn-md btn-success">Register</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="asset/js/jquery-3.4.1.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- JQUERY & AJAX FOR DISTRICT -->
+    <script type="text/javascript">
+      $(window).on('load', function(e){
+        $("#district").prop('disabled', true);
+        $("#sub_district").prop('disabled', true);
+        var url = "https://api.digitalteken.id/v2/data/province";
+        ajax_select( url, $("#province") );
+      })
+
+      $("#province").on("change", function(e) {
+        var url = "https://api.digitalteken.id/v2/data/district?province="+this.value;
+        ajax_select( url, $("#district") );
+        $("#district").prop('disabled', false);
+      })
+
+      $("#district").on("change", function(e) {
+        var province = $("#province").children("option:selected").val()
+        var url = "https://api.digitalteken.id/v2/data/subdistrict?province="+province+"&district="+this.value;
+        ajax_select( url, $("#sub_district") );
+        $("#sub_district").prop('disabled', false);
+      })
+
+      function ajax_select( url, target ){
+        target.find('option:gt(0)').remove().end()
+        $.ajax({
+          type    : "GET",
+          url     : url,
+          dataType: "json",
+          headers : {
+            'Access-Control-Allow-Origin' : '*',
+            "Accept"                      : "application/json",
+            "Content-Type"                : "application/json",
+            "apikey"                      : "bf9KZNW3AemcqEH0FhNZgZZdPLpwWCVjlt5VWEprlAGnuGjG"
+          },
+          success: function (response) {
+            data = response.data
+            $.each(data, function(val, text) {
+              target.append( '<option value="'+val+'">'+text+'</option>' )
+            })
+            console.log(data)
+          },
+          error: function(a, b, c) {
+            alert(b+": Document "+c)
+          }
+        });
+      }
+    </script>
+    <!-- JQUERY & AJAX FOR DISTRICT -->
+
+
+    <script type="text/javascript">
+      $("#register").on( 'submit', function(e) {
+        e.preventDefault();
+        var form_data = $(this).serialize();
+        console.log(form_data);
+
+        var url = "https://api.digitalteken.id/v2/register";
+        $.ajax({
+          type    : "POST",
+          // crossDomain: true,
+          dataType: 'jsonp',
+          url     : url,
+          headers : {
+            "Accept" : "application/json",
+            "apikey" : "bf9KZNW3AemcqEH0FhNZgZZdPLpwWCVjlt5VWEprlAGnuGjG"
+          },
+          processData : false,
+          contentType : false,
+          mimeType    : "application/json",
+          data        : form_data,
+          success: function (response) {
+            console.log(response)
+          },
+          error: function(a, b, c) {
+            console.log(a)
+            console.log(b)
+            console.log(c)
+          }
+        });
+      })
+    </script>
+
+  </body>
+</html>

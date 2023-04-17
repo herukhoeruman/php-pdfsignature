@@ -1,0 +1,2 @@
+2023-02-27 11:21:50 - Request : {"document":{"name":"\/tmp\/phpnhakGI","mime":"application\/pdf","postname":"fileName.pdf"},"signature":"[{\"email\":\"\",\"detail\":[{\"p\":1,\"x\":168,\"y\":58,\"w\":30,\"h\":15}]}]"}
+2023-02-27 11:21:50 - Response : {"status":"ERROR","ref_id":"9890ae89-1821-4cfe-a725-a6017a24ab92","code":"SIGNATURE_INVALID_FORMAT","timestamp":"2023-02-27T11:21:49+07:00","message":"Format Tandatangan tidak valid.","data":null}

@@ -1,0 +1,2 @@
+2023-03-01 09:28:51 - Request : {"document":{"name":"\/tmp\/phpogGjoG","mime":"application\/pdf","postname":"KETIKA_USTADZ_LUQMAN_BA'ABDUH_MERAGUKAN_KELELAKIAN_Full.pdf"},"signature":"[{\"email\":\"\",\"detail\":[{\"p\":1,\"x\":143,\"y\":53,\"w\":30,\"h\":15}]}]"}
+2023-03-01 09:28:52 - Response : {"status":"ERROR","ref_id":"98948c1d-2331-4f78-a0ef-a692822a1f4a","code":"SIGNATURE_INVALID_FORMAT","timestamp":"2023-03-01T09:28:53+07:00","message":"Format Tandatangan tidak valid.","data":null}

@@ -1,0 +1,110 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <meta name="robots" content="noindex">
+    <meta name="robots" content="nofollow">
+    <title>Document Download</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/jquery-ui.css">
+    <link href="asset/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="asset/css/style.css" rel="stylesheet">
+  </head>
+  <body class="d-flex flex-column h-100">
+    <header>
+      <!-- SDK Documentation For GET JSON value -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">DTB</a>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Upload</a>
+            </li>
+            <li class="nav-item active">
+              <a href="download.html" class="nav-link">Download</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    </header>
+
+    <!-- Begin page content -->
+    <main role="main" class="main">
+      <div class="container">
+        <div class="push-down">
+          <div class="card">
+            <div class="card-header">
+              Silakan Paste Document ID Disini
+            </div>
+            <div class="card-body">
+              <div class="form-group">
+                <label>Document ID</label>
+                <input class="form-control" id="doc_id" value="">
+              </div>
+              <div class="hide-this">
+                <label>Dokumen Ditemukan</label><br>       
+                <a href="" download="" class="btn btn-lg btn-primary" id="download">Download</a>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button id="btn" class="btn btn-md btn-success">Check ID</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="asset/js/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+      var btn_download = $("#download");
+      $(".hide-this").hide();
+      var data;
+
+      $("#btn").on('click', function(e){
+        var doc_id = $("#doc_id").val();
+        var url = "https://api.digitalteken.id/v2/document/download/"+doc_id;
+        $.ajax({
+          type    : "GET",
+          url     : url,
+          dataType: "json",
+          headers : {
+            'Access-Control-Allow-Origin' : '*',
+            "Accept"                      : "application/json",
+            "Content-Type"                : "application/json",
+            "apikey"                      : "bf9KZNW3AemcqEH0FhNZgZZdPLpwWCVjlt5VWEprlAGnuGjG"
+          },
+          success: function (response) {
+            data = response.data
+            btn_download.attr('href', "data:image/png;base64,"+data)
+            btn_download.attr('download', doc_id+".pdf")
+            $(".hide-this").show()
+
+          },
+          error: function(a, b, c) {
+            alert(b+": Document "+c)
+          }
+        });
+      })
+
+      $(document).ajaxStart(function () {
+        $("#btn").html('')
+        $("#btn").append('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>');
+        $("#btn").attr('disabled', true)
+      })
+      .ajaxStop(function () {
+        $("#btn").html('Document Found!')
+        $("#btn").attr('disabled', false)
+      });
+    </script>
+  </body>
+</html>
